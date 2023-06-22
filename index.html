@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Truth or Dare</title>
+    <link rel="website icon" href="media/truth or dare.png">
+</head>
+<body>
+
+    <div class="overlay-hidden hidden">
+        <div class="overlay">
+            <p class="playerWonClassAdd"></p>
+            <div class="truthOrDareClass">
+                <h1 class="displayTruthOrDareHeader align-center"></h1>
+                <p class="displayTruthOrDare align-center"><img class="loadingscreen" src="media/loading.gif"></p>
+                <button class="exit-button hidden">Exit</button>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Home Page -->
+    <div id="home">
+        <h1>Truth or Dare</h1>
+        <audio class="suspenseSoundClass"
+            src="media/suspense.mp3" hidden>
+        </audio>
+
+        <div class="menu">
+            <a href="#" class="change-page" data-gopage="inputName" data-curpage="home">
+                <div class="gametype makecolorblackClass">
+                    <p class="menu-p">Tic Tac Toe</p>
+                </div>
+            </a>
+            <a href="#" class="change-page" data-gopage="crocodileBite" data-curpage="home">
+                <div class="gametype">
+                    <p class="menu-p">Crocodile Bite</p>
+                </div>
+            </a>
+            <a href="#" class="change-page" data-gopage="choose-a-number" data-curpage="home">
+                <div class="gametype">
+                    <p class="menu-p">Choose a Number</p>
+                </div>
+            </a>
+            <a href="#" class="change-page" data-gopage="how-to-play" data-curpage="home">
+                <div class="gametype">
+                    <p class="menu-p">How to play/Rules</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="vrs">
+            <input type="radio" class="classicVrs" name="versions" checked>
+            <label for="classicVrs"><img class="vrs-icons" src="media/standard.png">Classic version</label>
+
+            <input type="radio" class="kinderGardenVrs" name="versions">
+            <label for="kinderGardenVrs"><img class="vrs-icons" src="media/kindergarten.png">Kindergarden version</label>
+
+            <input type="radio" class="boyfriendGirlfriendVrs" name="versions">
+            <label for="boyfriendGirlfriendVrs"><img class="vrs-icons" src="media/boyfriend-girlfriend1.png">Boyfriend/Girlfriend version</label>
+
+            <input type="radio" class="dirtyVrs" name="versions">
+            <label for="dirtyVrs"><img class="vrs-icons" src="media/png.monster-12.png">Dirty version</label>
+        </div>
+    </div>
+
+<!-- Tic Tac Toe -->
+
+    <div id="inputName" class="hidden">
+
+            <a href="#" class="change-page" data-gopage="home" data-curpage="inputName"><img class="backArrow gameColorClass" src="media/backarrow-removebg-preview.png"></a>
+
+            <article class="inputValidation">
+                <p>Maximun characters is 6</p>
+            </article>
+        
+            <article>
+            <p class="pageClass">Enter &nbsp; player 1 &nbsp; username</p>
+            <input type="text" class="name name1" placeholder="username">
+            
+            <button class="buttonSubmit playerOne submitName">Submit</button>
+            <p class="playerOneSubmitted submitName"></p>
+            </article>
+        
+            <article>
+            <p class="pageClass">Enter &nbsp; player 2 &nbsp; username</p>
+            <input type="text" class="name name2" placeholder="username">
+        
+            <button class="buttonSubmit playerTwo submitName">Submit</button>
+            <p class="playerTwoSubmitted submitName"></p>
+        
+            </article>
+        
+            <a href="#" class="change-page" data-gopage="tictactoe" data-curpage="inputName"><button class="pageClass submitButton gameColorClass">Verder gaan!!</button></a>
+        
+        </div>
+    
+    <div id="tictactoe" class="hidden">
+            <a href="#" class="change-page" data-gopage="inputName" data-curpage="tictactoe"><img class="backArrow makecolorblackClass" src="media/backarrow-removebg-preview.png"></a>
+    
+            <p class="playerOneNameClass"></p>
+            <p class="playerTwoNameClass"></p>
+    
+    
+        <div id="wrapper" style="height: auto;">
+            <p class="colorWhiteClass align-center">Tic Tac Toe</p>
+    
+            <div class="container">
+                <div class="box cell1"></div>
+                <div class="box cell2"></div>
+                <div class="box cell3"></div>
+                <div class="box cell4"></div>
+                <div class="box cell5"></div>
+                <div class="box cell6"></div>
+                <div class="box cell7"></div>
+                <div class="box cell8"></div>
+                <div class="box cell9"></div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div id="crocodileBite" class="hidden">
+
+        <a href="#" class="change-page" data-gopage="home" data-curpage="crocodileBite"><img class="backArrow" src="media/backarrow-removebg-preview.png"></a>
+
+           <h1>Crocodile Bite</h1>
+           <img class="crocodilePng" src="media/crocodile.png">
+           <div class="bites">
+                <div class="bite bite0"></div>
+                <div class="bite bite1"></div>
+                <div class="bite bite2"></div>
+                <div class="bite bite3"></div>
+                <div class="bite bite4"></div>
+                <div class="bite bite5"></div>
+                <div class="bite bite6"></div>
+                <div class="bite bite7"></div>
+                <div class="bite bite8"></div>
+                <div class="bite bite9"></div>
+                <div class="bite bite10"></div>
+
+           </div>
+        </div>
+        
+    <div id="choose-a-number" class="hidden">
+        <a href="#" class="change-page" data-gopage="home" data-curpage="choose-a-number"><img class="backArrow" src="media/backarrow-removebg-preview.png"></a>
+        <h1>Choose a number</h1>
+        <p class="display-array"></p>
+        <p class="display-answer"></p>
+        <input type="number" pattern="[0-9]*" class="input-number" placeholder="Choose between 0 to 20">
+
+        <button class="check-number">Submit!!</button>
+
+    </div>
+
+    <div id="how-to-play" class="hidden">
+        <a href="#" class="change-page" data-gopage="home" data-curpage="how-to-play"><img class="backArrow" src="media/backarrow-removebg-preview.png"></a>
+        <div class="hwtp">
+            <h1>How to play</h1>
+            <p>You play with 2 – 10 people. There are few choices for truth or dare. 
+            The choices are: Kindergarden version, Classic version, Dirty version or Boyfriend/Girlfriend version. 
+            You can also choose between Tic Tac Toe, Crocodile Bite or Choose a Number. Whoever loses must do a truth or dare. 
+            At the Tic Tac Toe you go 1 against 1 until someone loses. With the Crocodile Bite you have to be lucky not to pick the bad tooth or you lose.
+            You can play this game with up to 10 people. At Choose a Number you also have to be lucky not to choose the chosen number otherwise you lose.
+            You can play this game with up to 10 people.</p>
+        </div>
+
+        <div class="rules">
+            <h1>Rules</h1>
+            <ul>
+                <li>If you are under 18 years old you are not allowed to play the Dirty version.</li>
+                <li>If you are under 13 years old you are not allowed to play the Dirty version, Classic version and Boyfriend/Girlfriend version. You are only allowed to play kindergarden version.</li>
+                <li>You are not allowed to play alone. You play with 2 people or more. Maximum 10 people.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="application/javascript" src="js/main.js"></script>
+</body>
+</html>
